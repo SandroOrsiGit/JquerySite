@@ -1,3 +1,4 @@
+// Ece start
 let scrollPosition = window.pageYOffset;
           window.onscroll = function() {
             let currentScrollPos = window.pageYOffset;
@@ -8,3 +9,4 @@ let scrollPosition = window.pageYOffset;
             }
             scrollPosition = currentScrollPos;
           }
+// Ece end
