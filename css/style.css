@@ -1,8 +1,17 @@
-@import 'header.css';
+@import "header.css";
 
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 
 body {
-    margin: 0;
-    font-family: 'DotGothic16', sans-serif;
+	margin: 0;
+	font-family: "DotGothic16", sans-serif;
+}
+
+:root {
+	--darkgray: #23221d;
+	--pink: #db0080;
+	--blue: #2c96b0;
+	--light: #eddbc7;
+	--green: #2cb098;
+	--black: #000;
 }
