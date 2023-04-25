@@ -4,14 +4,15 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
-  background-color: #333;
+  height: 120px;
+  background-color: var(--light);
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
   box-sizing: border-box;
+  font-size: 24px;
 }
 
 .logo img {
@@ -26,16 +27,16 @@ nav ul {
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 0 30px;
 }
 
 nav a {
-  color: #fff;
+  color: var(--darkgray);
   text-decoration: none;
 }
 
 nav a:hover {
-  color: hotpink;
+  color: var(--pink);
 }
 
 .site-header {
@@ -49,5 +50,11 @@ nav a:hover {
 
 .site-header.visible {
   transform: translateY(0);
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    font-size: 20px;
+  }
 }
 /* Ece end */
