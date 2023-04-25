@@ -1,0 +1,20 @@
+footer {
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start |;
+}
+
+/*
+.created {
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 15px;
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+}
+*/
