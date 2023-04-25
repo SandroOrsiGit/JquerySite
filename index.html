@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/93f0eb7bfc.js" crossorigin="anonymous"></script>
+		<title>CodeQuery - Home</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/jquery-3.6.4.min.js"><\/script>');
+		</script>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<script src="https://kit.fontawesome.com/93f0eb7bfc.js" crossorigin="anonymous"></script>
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<script>
-		window.jQuery || document.write('<script src="js/jquery-3.6.4.min.js"><\/script>');
-	</script>
-</head>
+		<script src="plugins/multiscroll/jquery.multiscroll.js"></script>
+		<link rel="stylesheet" type="text/css" href="plugins/multiscroll/jquery.multiscroll.css" />
+		<script src="plugins/multiscroll/jquery.easings.min.js"></script>
+	</head>
 
-<body>
-	<!-- Ece start -->
-	<header class="site-header visible">
-		<div class="logo">
-			<img src="" alt="Logo" />
+	<body>
+		<!-- Ece start -->
+		<header class="site-header visible">
+			<div class="logo">
+				<img src="" alt="Logo" />
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Course Overview</a></li>
+					<li><a href="#">Curriculum & Pricing</a></li>
+					<li><a href="#">Registration</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Ece end -->
+
+		<!-- Sandro start -->
+		<div class="main-content" id="multiscroll">
+			<div class="ms-left">
+				<div class="ms-section">
+					<h1>test</h1>
+				</div>
+				<div class="ms-section">
+					<h1>test3</h1>
+				</div>
+			</div>
+			<div class="ms-right">
+				<div class="ms-section">
+					<h1>test2</h1>
+				</div>
+				<div class="ms-section">
+					<h1>test4</h1>
+				</div>
+			</div>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Course Overview</a></li>
-				<li><a href="#">Curriculum & Pricing</a></li>
-				<li><a href="#">Registration</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- Ece end -->
+		<!-- Sandro end -->
 
-	<!-- Sandro start -->
-	<div class="main-content"></div>
-	<!-- Sandro end -->
+		<!--Ana start-->
+		<footer>
+			<div class="contacts">
+				<h2>Contact Ons</h2>
+				<p>Schachtplein 1,</p>
+				<p>3550 Heusden-Zolder</p>
+				<p>011 53 87 33</p>
+				<p>onthaal@cvodeverdieping.be</p>
+			</div>
+			<div class="map">
+				<h2>Routebeschrijving</h2>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10034.855134225805!2d5.3285892!3d51.0399068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c125b1b1457655%3A0x645b166be3cb7e94!2sCVO%20De%20Verdieping!5e0!3m2!1spt-PT!2sbe!4v1682408929666!5m2!1spt-PT!2sbe"
+					width="400"
+					height="250"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+			<div class="social_media">
+				<h2>Volg ons social media</h2>
+				<a href="https://www.facebook.com/cvodeverdieping" target="_blank"
+					><i class="fa-brands fa-facebook"></i
+				></a>
+				<a href="https://www.instagram.com/cvodeverdieping" target="_blank"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+				<a href="https://www.linkedin.com/company/cvodeverdieping" target="_blank"
+					><i class="fa-brands fa-linkedin"></i
+				></a>
+			</div>
+			<p class="created">Copyright &copy; 2023 | Designed by Sandro, Ece and Ana</p>
+		</footer>
 
-
-	<!--Ana start-->
-	<footer>
-		<div class="contacts">
-			<h2>Contact Ons</h2>
-			<p>Schachtplein 1,</p>
-			<p>3550 Heusden-Zolder</p>
-			<p>011 53 87 33</p>
-			<p>onthaal@cvodeverdieping.be</p>
-		</div>
-		<div class="map">
-			<h2>Routebeschrijving</h2>
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10034.855134225805!2d5.3285892!3d51.0399068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c125b1b1457655%3A0x645b166be3cb7e94!2sCVO%20De%20Verdieping!5e0!3m2!1spt-PT!2sbe!4v1682408929666!5m2!1spt-PT!2sbe"
-				width="400" height="250" style="border: 0" allowfullscreen="" loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
-		<div class="social_media">
-			<h2>Volg ons social media</h2>
-			<a href="https://www.facebook.com/cvodeverdieping" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-			<a href="https://www.instagram.com/cvodeverdieping" target="_blank"><i
-					class="fa-brands fa-instagram"></i></a>
-			<a href="https://www.linkedin.com/company/cvodeverdieping" target="_blank"><i
-					class="fa-brands fa-linkedin"></i></a>
-		</div>
-		<p class="created">Copyright &copy; 2023 | Designed by Sandro, Ece and Ana</p>
-	</footer>
-
-
-
-	<!--Ana end-->
-	<script src="js/eindwerk.js"></script>
-</body>
-
+		<!--Ana end-->
+		<script src="js/eindwerk.js"></script>
+	</body>
 </html>
