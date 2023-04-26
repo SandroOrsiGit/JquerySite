@@ -3,6 +3,11 @@ $(document).ready(function () {
 	$(".site-header").shyheader({
 		classname: "is-watching",
 	});
+	
+	$('nav ul li').click(function() {
+		$('nav ul li').removeClass('active');
+		$(this).addClass('active');
+	});
 	// Ece end
 
 	//sandro start
