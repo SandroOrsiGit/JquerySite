@@ -1,13 +1,13 @@
 footer {
+    margin-top: 50px;
     background-color: var(--light);
     color: var(--dark);
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    align-self: flex-start |;
+    align-items: baseline;
 }
 
-/*
 .created {
     background-color: var(--light);
     color: var(--dark);
@@ -17,4 +17,13 @@ footer {
     width: 100%;
     text-align: center;
 }
-*/
+
+.fa-brands {
+    margin-right: 10px;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin {
+    padding: 5px;
+}
