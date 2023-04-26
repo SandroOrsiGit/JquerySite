@@ -1,10 +1,10 @@
 $(document).ready(function () {
 	// Ece start
 	$(".site-header").shyheader({
-		classname : "is-watching",
+		classname: "is-watching",
 	});
 	// Ece end
-	
+
 	//sandro start
 	let buttonWidthArray = [];
 	let buttonHeightArray = [];
@@ -21,7 +21,7 @@ $(document).ready(function () {
 		let index = $indexButtons.index(this);
 		switch (index) {
 			case 0:
-				window.location.href = "registration.html";
+				window.location.href = "";
 				break;
 			case 1:
 				window.location.href = "curriculum.html";
