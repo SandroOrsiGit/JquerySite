@@ -1,1 +1,7 @@
-.main-content
+.main-content {
+	text-align: center;
+}
+
+.main-section-1 {
+	background-color: var(--blue);
+}
