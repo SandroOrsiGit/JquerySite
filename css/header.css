@@ -5,7 +5,7 @@ header {
   left: 0;
   width: 100%;
   height: 120px;
-  background-color: var(--light);
+  background-color: var(--darkgray);
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -31,12 +31,12 @@ nav li {
 }
 
 nav a {
-  color: var(--darkgray);
+  color: var(--pink);
   text-decoration: none;
 }
 
 nav a:hover {
-  color: var(--pink);
+  color: var(--light);
 }
 
 .site-header {

@@ -9,6 +9,18 @@ window.onscroll = function () {
 	}
 	scrollPosition = currentScrollPos;
 };
+
+// $(window).on("scroll", function () {
+// 	let scrollPosition = $(window).scrollTop();
+// 	let currentScrollPos = $(this).scrollTop();
+// 	if (scrollPosition > currentScrollPos) {
+// 	  $(".site-header").addClass("visible");
+// 	} else {
+// 	  $(".site-header").removeClass("visible");
+// 	}
+// 	scrollPosition = currentScrollPos;
+//   }); 
+
 // Ece end
 
 $(document).ready(function () {
