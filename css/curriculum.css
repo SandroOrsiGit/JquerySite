@@ -1,0 +1,107 @@
+.arrow-tabs {
+    width: 90%;
+    min-width: 360px;
+    margin: auto;
+    padding: 50px;
+}
+
+.arrow-tabs>ul {
+    text-align: center;
+    font-weight: 500;
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.arrow-tabs>ul>li {
+    display: inline-block;
+    background: #fafafa;
+    padding: 0.6em 0;
+    position: relative;
+    width: 33%;
+    margin: 0 0 0 -4px;
+}
+
+.arrow-tabs>ul>li:before,
+.arrow-tabs>ul>li:after {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.arrow-tabs>ul>li.ui-tabs-active:before,
+.arrow-tabs>ul>li.ui-tabs-active:after {
+    opacity: 1;
+}
+
+.arrow-tabs>ul>li.ui-tabs-active a {
+    color: #009994;
+
+}
+
+.arrow-tabs>ul>li:hover:before,
+.arrow-tabs>ul>li:hover:after,
+.arrow-tabs>ul>li:focus:before,
+.arrow-tabs>ul>li:focus:after {
+    opacity: 1;
+}
+
+.arrow-tabs>ul>li:before,
+.arrow-tabs>ul>li.ui-state-active:hover:before,
+.arrow-tabs>ul>li.ui-state-active:focus:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 2px 3px rgba(0, 153, 148, 0.5);
+    top: 50%;
+    bottom: 0px;
+    left: 5px;
+    right: 5px;
+    border-radius: 100px /10px;
+}
+
+.arrow-tabs>ul>li:after,
+.arrow-tabs>ul>li.ui-state-active:hover:after,
+.arrow-tabs>ul>li.ui-state-active:focus:after {
+    content: "";
+    background: #fafafa;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    bottom: -6px;
+    margin-left: -6px;
+    transform: rotate(45deg);
+    box-shadow: 3px 3px 3px rgba(0, 153, 148, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-tabs>ul>li:hover:before,
+.arrow-tabs>ul>li:focus:before {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.arrow-tabs>ul>li:hover:after,
+.arrow-tabs>ul>li:focus:after {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-tabs>ul>li:focus {
+    outline: none;
+
+}
+
+.arrow-tabs>ul>li a {
+    color: #444;
+    text-decoration: none;
+}
+
+.arrow-tabs>ul>li a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.arrow-tabs>ul>li a span {
+    position: relative;
+    top: -0.5em;
+}
