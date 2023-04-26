@@ -47,6 +47,5 @@ $(document).ready(function () {
 			});
 		}
 	);
+	//sandro end
 });
-
-//sandro end
