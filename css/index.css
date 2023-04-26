@@ -3,5 +3,34 @@
 }
 
 .main-section-1 {
+	background-color: var(--darkgray);
+	color: var(--light);
+}
+.main-section-2 {
+	background-image: url("../image/blockquery.png");
+	background-size: cover;
+	background-position: center center;
+}
+.main-section-3 {
+	background-image: url("../image/randomcode.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+.main-section-4 {
+	background-color: var(--darkgray);
+	color: var(--light);
+}
+
+.home-button {
+	padding: 20px;
+	font-size: 16px;
 	background-color: var(--blue);
+	border: 2px groove var(--light);
+	border-radius: 3px;
+	color: var(--darkgray);
+	font-weight: bold;
+}
+.home-button:hover {
+	background-color: var(--green);
+	cursor: pointer;
 }

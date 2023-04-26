@@ -1,18 +1,19 @@
 /* Ece start */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  background-color: var(--darkgray);
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-  box-sizing: border-box;
-  font-size: 24px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	background-color: var(--light);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	box-sizing: border-box;
+	font-size: 24px;
+	z-index: 10;
 }
 
 .logo img {
@@ -27,34 +28,42 @@ nav ul {
 }
 
 nav li {
-  margin: 0 30px;
+	margin: 0 30px;
 }
 
 nav a {
-  color: var(--pink);
-  text-decoration: none;
+	color: var(--pink);
+	text-decoration: none;
 }
 
 nav a:hover {
-  color: var(--light);
+	color: var(--light);
+  cursor: pointer;
 }
 
 .site-header {
+	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	transition: transform 0.3s ease-in-out;
-	transform: translateY(-100%);
+	z-index: 1;
+	-webkit-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+	background: var(--darkgray);
 }
 
-.site-header.visible {
-	transform: translateY(0);
+.is-watching {
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
 }
 
-@media only screen and (max-width: 800px) {
-  header {
-    font-size: 20px;
-  }
+.shy:before,
+.shy:after {
+	display: table;
+	content: "";
+}
+.shy:after {
+	clear: both;
 }
 /* Ece end */
