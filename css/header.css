@@ -1,18 +1,19 @@
 /* Ece start */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  background-color: var(--light);
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-  box-sizing: border-box;
-  font-size: 24px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	background-color: var(--light);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	box-sizing: border-box;
+	font-size: 24px;
+	z-index: 10;
 }
 
 .logo img {
@@ -27,16 +28,16 @@ nav ul {
 }
 
 nav li {
-  margin: 0 30px;
+	margin: 0 30px;
 }
 
 nav a {
-  color: var(--darkgray);
-  text-decoration: none;
+	color: var(--darkgray);
+	text-decoration: none;
 }
 
 nav a:hover {
-  color: var(--pink);
+	color: var(--pink);
 }
 
 .site-header {
@@ -53,8 +54,8 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  header {
-    font-size: 20px;
-  }
+	header {
+		font-size: 20px;
+	}
 }
 /* Ece end */
