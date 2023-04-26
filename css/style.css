@@ -1,16 +1,23 @@
-/* Ece start */
 
 @import "header.css";
 @import "index.css";
 @import "footer.css";
 
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+/* font-family: "DotGothic16", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&display=swap");
+/* font-family: 'Thasadith', sans-serif; */
 
 body {
     margin: 0;
-    font-family: "DotGothic16", sans-serif;
+    font-family: var(--content-font);
 }
 
+/* Ece start */
+:root {
+    --header-font: 'DotGothic16', sans-serif;
+    --content-font: 'Thasadith', sans-serif;
+}
 /* Ece end */
 
 /* Sandro start */
