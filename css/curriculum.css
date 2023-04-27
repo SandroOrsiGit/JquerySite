@@ -1,13 +1,23 @@
+body {
+    background-color: var(--light);
+}
+
+#container_curriculum {
+    font-weight: 600;
+    line-height: 1.5;
+}
+
 .arrow-tabs {
     width: 90%;
     min-width: 360px;
-    margin: auto;
+    margin-top: 9%;
+    margin-bottom: 5%;
     padding: 50px;
+    position: sticky;
 }
 
 .arrow-tabs>ul {
     text-align: center;
-    font-weight: 500;
     padding: 0;
     position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -16,7 +26,7 @@
 
 .arrow-tabs>ul>li {
     display: inline-block;
-    background: #fafafa;
+    background: var(--light);
     padding: 0.6em 0;
     position: relative;
     width: 33%;
@@ -35,7 +45,7 @@
 }
 
 .arrow-tabs>ul>li.ui-tabs-active a {
-    color: #009994;
+    color: var(--pink);
 
 }
 
@@ -52,7 +62,7 @@
     content: "";
     position: absolute;
     z-index: -1;
-    box-shadow: 0 2px 3px rgba(0, 153, 148, 0.5);
+    box-shadow: 0 2px 3px rgba(219, 0, 128, 0.5);
     top: 50%;
     bottom: 0px;
     left: 5px;
@@ -64,7 +74,7 @@
 .arrow-tabs>ul>li.ui-state-active:hover:after,
 .arrow-tabs>ul>li.ui-state-active:focus:after {
     content: "";
-    background: #fafafa;
+    background: var(--light);
     position: absolute;
     width: 12px;
     height: 12px;
@@ -72,7 +82,7 @@
     bottom: -6px;
     margin-left: -6px;
     transform: rotate(45deg);
-    box-shadow: 3px 3px 3px rgba(0, 153, 148, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 3px rgba(219, 0, 128, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .arrow-tabs>ul>li:hover:before,
@@ -92,7 +102,7 @@
 }
 
 .arrow-tabs>ul>li a {
-    color: #444;
+    color: var(--darkgray);
     text-decoration: none;
 }
 
