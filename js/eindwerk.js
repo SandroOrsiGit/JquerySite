@@ -79,4 +79,106 @@ $(document).ready(function () {
 	}
 
 	//sandro end
+
+	//Ana start
+	$(".arrow-tabs a").click(function (e) {
+		e.preventDefault();
+		var selectedTab = $(this).parent();
+		var ul = selectedTab.parent();
+		ul.find("li").removeClass("ui-tabs-active ui-state-active ui-state-hover").attr("aria-selected", false);
+		selectedTab.addClass("ui-tabs-active ui-state-active").attr("aria-selected", true);
+		var content = ul.parent().find(".contents .ui-tabs-panel");
+		content.hide();
+		ul.parent().find($(this).attr("href")).fadeIn(1000);
+	});
+	$("a i").hover(
+		function () {
+			$(this).css("color", "#db0080");
+			$(this)
+				.stop()
+				.animate(
+					{ deg: 360 },
+					{
+						duration: 500,
+						step: function (now) {
+							$(this).css({
+								transform: "rotate(" + now + "deg)",
+							});
+						},
+					}
+				);
+		},
+		function () {
+			$(this).css("color", "#2c96b0");
+			$(this)
+				.stop()
+				.animate(
+					{ deg: 0 },
+					{
+						duration: 500,
+						step: function (now) {
+							$(this).css({
+								transform: "rotate(" + now + "deg)",
+							});
+						},
+					}
+				);
+		}
+	);
+	$("#vschool-button")
+		.click(function () {
+			window.open("https://www.vschool.be", "_blank");
+		})
+		.css({
+			"background-color": "#23221d",
+			border: "none",
+			color: "#eddbc7",
+			padding: "15px 32px",
+			"text-align": "center",
+			"text-decoration": "none",
+			display: "inline-block",
+			"font-size": "16px",
+			margin: "4px 2px",
+			"border-radius": "5px",
+			cursor: "pointer",
+		})
+		.hover(
+			function () {
+				$(this).css("color", "#db0080");
+				$(this).css("box-shadow", "3px 3px #db0080");
+			},
+			function () {
+				$(this).css("color", "#eddbc7");
+				$(this).css("box-shadow", "3px 3px #eddbc7");
+			}
+		);
+	$("#cvo-button")
+		.click(function () {
+			window.open("https://www.cvodeverdieping.be/opleidingen/full-stack-webdeveloper", "_blank");
+		})
+		.css({
+			"background-color": "#23221d",
+			border: "none",
+			color: "#eddbc7",
+			padding: "15px 32px",
+			"text-align": "center",
+			"text-decoration": "none",
+			display: "inline-block",
+			"font-size": "16px",
+			margin: "4px 2px",
+			"border-radius": "5px",
+			cursor: "pointer",
+		})
+		.hover(
+			function () {
+				$(this).css("color", "#db0080");
+				$(this).css("box-shadow", "3px 3px #db0080");
+			},
+			function () {
+				$(this).css("color", "#eddbc7");
+				$(this).css("box-shadow", "3px 3px #eddbc7");
+			}
+		);
+
+	//Ana end
 });

@@ -10,9 +10,36 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/curriculum.css" />
     <script src="https://kit.fontawesome.com/93f0eb7bfc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="plugins/shyheader/jquery.shyheader.min.js"></script>
+    <script src="plugins/multiscroll/jquery.multiscroll.js"></script>
+    <link rel="stylesheet" type="text/css" href="plugins/multiscroll/jquery.multiscroll.css" />
+    <script src="plugins/multiscroll/jquery.easings.min.js"></script>
+    <script>
+        window.jQuery ||
+            document.write('<script src="js/jquery-3.6.4.min.js"><\/script>');
+    </script>
 </head>
 
 <body>
+    <!-- Ece start -->
+    <header class="site-header">
+        <a href="index.html">
+            <div class="logo">
+                <img src="image/sitelogo.png" alt="Logo" />
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="overview.html">Course Overview</a></li>
+                <li><a href="curriculum.html">Curriculum & Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Ece end -->
+
+    <!--Ana start-->
     <div id="container_curriculum">
         <div class="arrow-tabs ui-tabs ui-widget ui-widget-content ui-corner-all">
             <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
@@ -30,7 +57,7 @@
 
                 <li class="ui-state-default ui-corner-top" role="tab">
                     <a href="#price" class="ui-tabs-anchor" role="presentation">
-                        <span>Price</span>
+                        <span>Price and subscription</span>
                     </a>
                 </li>
             </ul>
@@ -39,28 +66,61 @@
                 <div id="index" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel">
                     <h2> What will you be learning?</h2>
                     <ul>
-                        <li>Basic techniques jQuery - implementation script</li>
-                        <li>Selectors - select elements on the page</li>
-                        <li>Events - track down and handle events (e.g. a mouse click, hover over an image,…)</li>
-                        <li>Effects - fade, slide, toggle, and so much more fun stuff</li>
-                        <li>jQuery UI - add and configure user interaction elements</li>
-                        <li>Animation with jQuery</li>
-                        <li>How to select, add and configure plugins</li>
-                        <li>JSON and AJAX - reading and writing external data, without doing a page refresh</li>
-                        <li>Define a custom plugin</li>
+                        <li>Basic techniques jQuery: with jQuery, you can easily manipulate the
+                            content of your web pages, making it possible to create dynamic and interactive websites.
+                            The implementation script is the code that includes the jQuery library and any custom
+                            JavaScript code that you've written to use with it. This script is usually included in the
+                            head section of your HTML file.</li><br>
+                        <li>Selectors: they allow you to target specific elements on a web page based on their HTML tag,
+                            class, ID, attributes, or relationships to other elements. Learning how to use selectors
+                            effectively is essential to working with jQuery, as it allows you to manipulate elements
+                            with precision and granularity.</li><br>
+                        <li>Events: are actions or occurrences that happen in a web page, such as a user clicking on a
+                            button, scrolling the page, or hovering over an image. Some common use cases for event
+                            handling in jQuery include form validation, dynamic content loading, and creating
+                            interactive UI elements like sliders, accordions, and tabs.</li><br>
+                        <li>Effects: fade, slide, toggle, and so much more fun stuff, are used to enhance the user
+                            experience on a website by making it more interactive and engaging.</li><br>
+                        <li>jQuery UI: with jQuery UI, you can add a wide range of UI elements to your web pages,
+                            including buttons, datepickers, sliders, accordions, and dialog boxes. These elements are
+                            highly customizable, allowing you to change their appearance, behavior, and functionality to
+                            suit your needs.</li><br>
+                        <li>Animation with jQuery: some examples of animation effects you can create with jQuery include
+                            sliding panels, fading elements in and out, rotating images, and creating custom animations
+                            using keyframes. Animation with jQuery can make your web pages more visually appealing, help
+                            to guide the user's attention, and create a more immersive experience. It is an essential
+                            tool for modern web development and can be used to enhance user interfaces, create
+                            interactive games and applications, and add visual interest to content.</li><br>
+                        <li>How to select, add and configure plugins: plugins are additional sets of functionalities
+                            that can be added to jQuery to make development faster and easier. In order to use a plugin,
+                            you need to select it, add it to your project, and configure it to work with your code.</li>
+                        <br>
+                        <li>JSON and AJAX: JSON can be used to communicate with web servers to retrieve or send data in
+                            a structured way, without requiring a page refresh. This is accomplished using AJAX
+                            (Asynchronous JavaScript and XML) technology, which allows the browser to make asynchronous
+                            requests to a web server and update the page content dynamically without requiring a full
+                            page reload.</li><br>
+                        <li>Create a custom plugin: creating a custom plugin is a powerful way to extend the
+                            functionality of jQuery to meet the specific needs of your project.</li>
                     </ul>
                 </div>
 
                 <div id="duration" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel"
                     style="display: none;">
-                    <h2>How long will it last?</h2>
+                    <h2>Duration of the course</h2>
                     <p>
-                        If you decide to go for distance learning with V-School, this course has a duration of 60 lesson
-                        times.
+                        The duration of the course will depend on the mode of learning you choose. If you opt for
+                        distance learning with V-School, the course will consist of 60 lesson times, which you can
+                        complete at your own pace from the comfort of your home. This flexible option allows you to
+                        balance your studies with your other commitments and tailor your learning experience to your
+                        individual needs.
                     </p>
                     <p>
-                        If you decide to go for presencial learning in the CVO de Verdieping, through the Full Stack
-                        WebDeveloper, this course has a duration of around two 10 months.
+                        Alternatively, if you prefer a more structured and immersive learning environment, you can
+                        choose to attend the Full Stack WebDeveloper program at CVO de Verdieping in person. This
+                        program lasts for around 10 months and provides hands-on training with expert teachers and
+                        fellow students. By working together in a collaborative setting, you'll have the opportunity to
+                        build your skills and network with like-minded individuals in the industry.
                     </p>
                 </div>
 
@@ -68,8 +128,17 @@
                     style="display: none;">
                     <h2>Total price</h2>
                     <p>
-                        For the jQuery with V-School the price is 94€.
+                        If you choose to enroll in the jQuery course with V-School, the total cost will be 94€. This
+                        includes all course materials and access to our online learning platform.
                     </p>
+                    <button id="vschool-button">Enroll in V-School jQuery Course</button>
+                    <p>
+                        If you're interested in enrolling in the Full Stack Webdeveloper course at CVO de Verdieping,
+                        please reach out to our course coordinators to learn about the full range of conditions and
+                        requirements. They will be able to provide you with all the necessary information to help you
+                        make an informed decision about your education.
+                    </p>
+                    <button id="cvo-button">Enroll in Full Stack Webdeveloper Course</button>
                 </div>
             </div>
         </div>
@@ -103,26 +172,8 @@
     </footer>
     <p class="created">Copyright &copy; 2023 | Designed by Sandro, Ece and Ana</p>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-        crossorigin="anonymous"></script>
+    <script src="js/eindwerk.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('.arrow-tabs a').click(function (e) {
-                e.preventDefault()
-                var selectedTab = $(this).parent();
-                var ul = selectedTab.parent();
-                ul.find("li").removeClass("ui-tabs-active ui-state-active ui-state-hover").attr("aria-selected", false);
-                selectedTab.addClass("ui-tabs-active ui-state-active").attr("aria-selected", true);
-
-                // show/hide content
-                var content = ul.parent().find(".contents .ui-tabs-panel");
-                content.hide();
-                ul.parent().find($(this).attr("href")).fadeIn(200);
-            })
-        })
-    </script>
 </body>
 
 </html>
