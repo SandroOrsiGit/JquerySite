@@ -8,13 +8,23 @@ $(document).ready(function () {
 	}, 800);
 	//sandro end
 	// Ece start
+
+	// SHY HEADER PLUGIN
 	$(".site-header").shyheader({
 		classname: "is-watching",
 	});
+	// FOR ACTIVE CLASS
+	let url = window.location.href;
 
-	$("nav ul li").click(function () {
-		$("nav ul li").removeClass("active");
-		$(this).addClass("active");
+	$('nav ul li a').each(function() {
+		if (this.href === url) {
+			$(this).closest('li').addClass('active');
+		}
+	});
+
+	$('nav ul li').click(function() {
+		$('nav ul li').removeClass('active');
+		$(this).addClass('active');
 	});
 	// Ece end
 
