@@ -1,4 +1,12 @@
 $(document).ready(function () {
+	//sandro start
+	setTimeout(() => {
+		$("#loading p").removeClass("hidden");
+	}, 100);
+	setTimeout(() => {
+		$("#loading").hide();
+	}, 800);
+	//sandro end
 	// Ece start
 	$(".site-header").shyheader({
 		classname: "is-watching",
