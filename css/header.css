@@ -14,6 +14,7 @@ header {
 	box-sizing: border-box;
 	font-size: 24px;
 	z-index: 10;
+	font-family: var(--header-font) !important;
 }
 
 .logo img {
@@ -32,13 +33,13 @@ nav li {
 }
 
 nav a {
-	color: var(--pink);
+	color: #ff66c7;
 	text-decoration: none;
 }
 
 nav a:hover {
-	color: var(--light);
-  cursor: pointer;
+	cursor: pointer;
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.326);
 }
 
 .site-header {
@@ -51,6 +52,7 @@ nav a:hover {
 	-webkit-transition: all 200ms ease-out;
 	transition: all 200ms ease-out;
 	background: var(--darkgray);
+	box-shadow: 0 2px 10px black;
 }
 
 .is-watching {
@@ -66,4 +68,15 @@ nav a:hover {
 .shy:after {
 	clear: both;
 }
+
+nav li.active a {
+	transition: box-shadow 0.5s;
+	color: var(--blue);
+	box-shadow: inset 0 -50px 0 #00000000;
+	padding: 0 10px 5px 10px;
+	background: linear-gradient(to right, #f5e762, #ff66c7, #7844ff, #2bcbff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 /* Ece end */
