@@ -53,6 +53,7 @@ nav a:hover {
 	-webkit-transition: all 200ms ease-out;
 	transition: all 200ms ease-out;
 	background: var(--darkgray);
+	box-shadow: 0 2px 10px black; 
 }
 
 .is-watching {
