@@ -7,13 +7,13 @@ $(document).ready(function () {
 		$("#loading").hide();
 	}, 800);
 	//sandro end
-	// Ece start
 
-	// SHY HEADER PLUGIN
+	// Ece start
+	//--------SHY HEADER PLUGIN
 	$(".site-header").shyheader({
 		classname: "is-watching",
 	});
-	// FOR ACTIVE CLASS
+	//--------FOR ACTIVE CLASS
 	let url = window.location.href;
 
 	$("nav ul li a").each(function () {
@@ -26,6 +26,28 @@ $(document).ready(function () {
 		$('nav ul li').removeClass('active');
 		$(this).addClass('active');
 	});
+
+	//-----FOR HOVER EFFECT in Course Overwiew
+	$('.flip-card').hover(function() {
+		$(this).find('.flip-card-front').css({
+		  'transform': 'rotateY(180deg)',
+		  '-moz-transform': 'rotateY(180deg)'
+		});
+		$(this).find('.flip-card-back').css({
+		  'transform': 'rotateY(0deg)',
+		  '-moz-transform': 'rotateY(0deg)'
+		});
+	  }, function() {
+		$(this).find('.flip-card-front').css({
+		  'transform': 'rotateY(0deg)',
+		  '-moz-transform': 'rotateY(0deg)'
+		});
+		$(this).find('.flip-card-back').css({
+		  'transform': 'rotateY(-180deg)',
+		  '-moz-transform': 'rotateY(-180deg)'
+		});
+	  });
+	  
 	// Ece end
 
 	//sandro start
